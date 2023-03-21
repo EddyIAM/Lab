@@ -1,6 +1,6 @@
 # Lab Setup
 
-![Picture of current lab setup](Lab%20v2%20Layout.png"Lab")
+![Picture of current lab setup](Lab%20v2%20Layout.png)
 
 [[Hardware Setup]](https://github.com/EddyIAM/Lab/blob/main/Hardware%20setup.md)
 [[Linux NUC Setup]](https://github.com/EddyIAM/Lab/blob/main/Linux%20NUC%20setup.md)

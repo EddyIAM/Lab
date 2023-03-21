@@ -12,11 +12,11 @@ The Raspberry PIs vary.
 
 ## Windows Hardware Setup
 
-The Windows systems are currently hand installed via USB.  
+The Windows desktop was hand installed via USB and then cloned using CloneZilla for easy re-imaging.
 
 ## Linux Hardware Setup
 
-The Linux NUCs are deployed via Ubuntu MAAS.
+The Linux NUCs were initially deployed via Ubuntu MAAS but it's now offline so any new boxes, or rebuilds, will have to be done by hand.
 
 ## Raspberry PI Setup
 
@@ -26,6 +26,8 @@ The Raspberry PIs are all hand installed.
 
 Most are connected to a 16 port switch which in turn connects to a MikroTek router.  A couple connect to the router directly.  Either way they are all on the lab subnet and behind the router.  
 
-This router separates the lab from the production network and allows access to certain applications web interfaces and Guacamole via Traefik.
+One port on the 16 port switch connects to an OPNSense firewall that has the detonation network on the other side.  The detonation network is completely isolated from the lab network except for access to/from Security Onion and velociraptor.  Currently this is where the Windows desktop resides.  
+
+The MikroTex router separates the lab from the production network and allows access to certain applications web interfaces and Guacamole via Traefik.
 
 All lab traffic is monitored with Security Onion.
